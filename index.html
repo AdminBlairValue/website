@@ -80,6 +80,47 @@
       .logo h2{font-size:18px}
       main{margin:24px auto}
     }
+    /* CTA: Get Started button under tiles */
+.cta-wrap{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top:36px;
+}
+
+.cta-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  border:none;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+
+  background:linear-gradient(180deg,var(--brand-1),var(--brand-2));
+  box-shadow:0 6px 16px rgba(30,111,229,.25);
+
+  padding:16px 34px;
+  border-radius:12px;
+  font-size:1.15rem;
+  min-width:220px;
+
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+
+.cta-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(30,111,229,.32);
+}
+
+@media (max-width:720px){
+  .cta-btn{
+    width:min(92vw, 360px);
+    min-width:0;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -117,6 +158,11 @@
         <p>Publish directly to your favorite resale platform.</p>
       </div>
     </div>
+  <div class="cta-wrap">
+  <a class="cta-btn" href="https://app.blairvalue.com" target="_blank" rel="noopener noreferrer">
+    Get Started
+  </a>
+</div>
   </main>
 
   <footer>
